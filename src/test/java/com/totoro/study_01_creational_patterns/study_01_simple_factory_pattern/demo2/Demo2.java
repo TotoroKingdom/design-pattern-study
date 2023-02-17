@@ -1,5 +1,8 @@
 package com.totoro.study_01_creational_patterns.study_01_simple_factory_pattern.demo2;
 
+import com.totoro.study_01_creational_patterns.study_01_simple_factory_pattern.Factory;
+import com.totoro.study_01_creational_patterns.study_01_simple_factory_pattern.Vehicle;
+
 import java.util.Scanner;
 
 /**
@@ -16,16 +19,14 @@ public class Demo2 {
          */
         Scanner scanner = new Scanner(System.in);
         String vehicle = scanner.nextLine();
-
         //直接使用工厂方法获取具体的交通工具，不用自己创建了
         Vehicle vObject = Factory.getVehicle(vehicle);
         System.out.println(vObject.getName());
-
-        /**
-         * 优点：创建交通工具类比Demo1简化了好多，方便调用者。
-         * 缺点：1-辛苦写工厂方法的人
-         *      2-工厂类拓展和维护困难
-         */
-
     }
+
+    /**
+     * 优点：创建交通工具类比Demo1简化了好多，方便调用者。
+     * 缺点：1-辛苦写工厂方法的人
+     *      2-工厂类拓展和维护困难
+     */
 }

@@ -1,4 +1,4 @@
-package com.totoro.study_01_creational_patterns.study_01_simple_factory_pattern.demo2;
+package com.totoro.study_01_creational_patterns.study_01_simple_factory_pattern;
 
 /**
  * @author:totoro
