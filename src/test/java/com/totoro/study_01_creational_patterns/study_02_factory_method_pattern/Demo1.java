@@ -30,6 +30,8 @@ public class Demo1 {
             Factory o = (Factory) Class.forName(map.get(code)).newInstance();
             Vehicle vehicle = o.buildVehicle();
             System.out.println(vehicle.getName());
+
+
         }
     }
 
