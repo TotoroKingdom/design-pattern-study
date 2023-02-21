@@ -8,8 +8,10 @@ package com.totoro.study_01_creational_patterns.study_04_singleton_pattern;
 public class Demo {
     public static void main(String[] args) {
         for (int i = 0; i < 10; i++) {
-            BenzCar benzCar = BenzCar.getBenzCar();
-            System.out.println(benzCar.getOwner()+ "的" + benzCar.getName() + benzCar.hashCode());
+            new Thread(() -> {
+                BenzCar benzCar = BenzCar.getBenzCar();
+                System.out.println(benzCar.getOwner()+ "的" + benzCar.getName() + benzCar.hashCode());
+            }).start();
         }
     }
 }
