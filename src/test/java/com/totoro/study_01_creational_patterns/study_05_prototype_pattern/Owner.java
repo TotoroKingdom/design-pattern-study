@@ -1,5 +1,8 @@
 package com.totoro.study_01_creational_patterns.study_05_prototype_pattern;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
 import java.io.Serializable;
 
 /**
