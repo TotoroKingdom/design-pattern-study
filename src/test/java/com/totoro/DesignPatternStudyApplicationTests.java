@@ -10,4 +10,5 @@ class DesignPatternStudyApplicationTests {
     void contextLoads() {
     }
 
+
 }
