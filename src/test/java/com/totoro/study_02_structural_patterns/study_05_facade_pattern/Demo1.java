@@ -6,6 +6,7 @@ package com.totoro.study_02_structural_patterns.study_05_facade_pattern;
  * @description:
  */
 public class Demo1 {
+
     public static void main(String[] args) {
 
         Facade facade = new Facade();
