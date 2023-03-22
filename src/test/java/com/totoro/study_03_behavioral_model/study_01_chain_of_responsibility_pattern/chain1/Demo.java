@@ -17,13 +17,13 @@ public class Demo {
                 .appendNext(new Level2AuthLink("002", "小叮当经理"))
                 .appendNext(new Level1AuthLink("003", "小叮当老板"));
 
-        System.out.println(JSONUtil.parse(authLink.doAuth("小小叮当","test1",new Date())));
+        System.out.println(JSONUtil.parse(authLink.doAuth("小小叮当","test1", new Date())));
 
         AuthService.auth("001","test1");
-        System.out.println(JSONUtil.parse(authLink.doAuth("小小叮当","test1",new Date())));
+        System.out.println(JSONUtil.parse(authLink.doAuth("小小叮当","test1", new Date())));
 
         AuthService.auth("002","test1");
-        System.out.println(JSONUtil.parse(authLink.doAuth("小小叮当","test1",new Date())));
+        System.out.println(JSONUtil.parse(authLink.doAuth("小小叮当","test1", new Date())));
 
         AuthService.auth("003","test1");
         System.out.println(JSONUtil.parse(authLink.doAuth("小小叮当","test1",new Date())));
